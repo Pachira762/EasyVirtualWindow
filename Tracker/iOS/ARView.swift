@@ -26,7 +26,7 @@ struct ARViewWrapper: UIViewRepresentable {
 class CustomARView: ARView, ARSessionDelegate {
     weak var trackingData: TrackingData?
     
-    private let oscClient: OscClient = OscClient(address:"192.168.1.28", port:11125)
+    private let oscClient: OscClient = OscClient(address:"192.168.1.255", port:11125)
     private var sessionStarted: Bool = false
 
     required init(frame frameRect: CGRect) {
